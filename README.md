@@ -8,6 +8,14 @@ This does not modify the live website. CTAs and important paths link back to the
 
 `http://127.0.0.1:5197`
 
+## Hosted URL
+
+`https://callcorbin-cro-prototype.vercel.app`
+
+## GitHub
+
+`https://github.com/mikeyap87/callcorbin-cro-prototype`
+
 ## Run Locally
 
 ```bash

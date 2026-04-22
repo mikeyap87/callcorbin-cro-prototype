@@ -49,6 +49,14 @@ Open:
 
 `http://127.0.0.1:5197`
 
+Hosted production:
+
+`https://callcorbin-cro-prototype.vercel.app`
+
+GitHub:
+
+`https://github.com/mikeyap87/callcorbin-cro-prototype`
+
 Run checks:
 
 ```bash
@@ -78,6 +86,8 @@ This prototype is configured for Vercel with `vercel.json`.
 - Build command: `npm run build`
 - Output directory: `dist`
 - Runtime: static files only
+- Production URL: `https://callcorbin-cro-prototype.vercel.app`
+- GitHub integration: `mikeyap87/callcorbin-cro-prototype`
 
 ## Important Constraints
 
