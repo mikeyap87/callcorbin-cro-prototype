@@ -73,7 +73,11 @@ See `docs/IMAGE_GENERATION.md` for prompts, source paths, and optimization notes
 
 ## Deployment Notes
 
-This prototype has not been deployed. It can be served as a static site from any host after running `npm run build`.
+This prototype is configured for Vercel with `vercel.json`.
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Runtime: static files only
 
 ## Important Constraints
 

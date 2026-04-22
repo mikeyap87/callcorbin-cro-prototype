@@ -33,6 +33,7 @@ npm run build
 - `index.html` - single-page prototype.
 - `styles.css` - responsive premium visual system.
 - `script.js` - mobile navigation and mailto contact action.
+- `vercel.json` - Vercel build/output settings for static deployment.
 - `assets/images/` - generated and optimized local image assets.
 - `docs/PROJECT.md` - plain-English product and strategy documentation.
 - `docs/CRO_AUDIT.md` - discovery notes and conversion strategy.
