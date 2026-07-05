@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Corbin &amp; Co CRO Prototype</title>
+    <title>Corbin &amp; Co | Fraser Valley Home Value and Real Estate Advice</title>
     <meta
       name="description"
-      content="A premium conversion-focused local prototype for Corbin & Co, Langley and Fraser Valley real estate."
+      content="Start with your home value, browse live listings, and get clearer real estate advice for Langley and the Fraser Valley."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Corbin and Co prototype home">
+      <a class="brand" href="#top" aria-label="Corbin and Co home">
         <span class="brand-mark">C</span>
         <span>
           <strong>Corbin &amp; Co</strong>
@@ -28,95 +28,106 @@
       </button>
 
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a href="#sell">Sell</a>
+        <a href="#home-value">Home value</a>
         <a href="#buy">Buy</a>
-        <a href="#proof">Proof</a>
+        <a href="#proof">Reviews</a>
         <a href="#areas">Areas</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <a class="header-cta" href="tel:+16048252853">Call/Text 604-825-2853</a>
+      <a class="header-cta" href="tel:+16048252853">Text 604-825-2853</a>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="home-value" aria-labelledby="hero-title">
         <img
-          src="assets/images/hero-langley-advisor.jpg"
-          alt="Real estate advisor reviewing a tablet with home buyers inside a bright Fraser Valley home"
+          src="assets/images/hero-fraser-valley-home-v2.jpg"
+          alt="Warm Fraser Valley detached home exterior at golden hour"
           class="hero-image"
           width="1600"
           height="842"
         >
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Langley, Cloverdale, Surrey and the Fraser Valley</p>
-          <h1 id="hero-title">Real estate decisions with sharper local advice.</h1>
-          <p class="hero-copy">
-            Corbin &amp; Co helps buyers and sellers move with clear pricing, fast communication,
-            tough negotiation, and no-fluff strategy built on 850+ local sales.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="https://callcorbin.ca/home-evaluation/" target="_blank" rel="noreferrer">
-              Get a 24-hour home value
-            </a>
-            <a class="button secondary" href="https://homes.callcorbin.ca/" target="_blank" rel="noreferrer">
-              Search live listings
-            </a>
-          </div>
-          <dl class="hero-proof" aria-label="Corbin and Co proof points">
-            <div>
-              <dt>850+</dt>
-              <dd>homes sold</dd>
+          <p class="eyebrow hero-eyebrow">Langley, Cloverdale, Surrey and the Fraser Valley</p>
+          <form class="hero-intake" data-hero-lead-form>
+            <h1 id="hero-title" class="hero-title">
+              <span>What could</span>
+              <label class="hero-headline-field" for="hero-address">
+                <span class="sr-only">Street address</span>
+                <span class="hero-caret" aria-hidden="true"></span>
+                <span class="hero-address-hint" aria-hidden="true">your street address</span>
+                <input
+                  id="hero-address"
+                  name="address"
+                  type="text"
+                  autocomplete="street-address"
+                  required
+                >
+              </label>
+              <span>sell for?</span>
+            </h1>
+            <div class="hero-action-row">
+              <button class="button primary hero-submit" type="submit">Start my free local price range</button>
+              <p class="hero-microproof" aria-label="Quick trust points">Reviewed by Corbin &middot; Free &middot; No obligation</p>
             </div>
-            <div>
-              <dt>211</dt>
-              <dd>Google reviews on the live site</dd>
+            <p class="hero-copy">
+              Start with your street address and get to a clearer local price range, better timing, and the next smart step before you list.
+            </p>
+            <div class="hero-reviewer" aria-label="Reviewed by Corbin">
+              <img
+                src="assets/images/corbin-signature-portrait-v2.jpg"
+                alt="Corbin smiling in a bright Fraser Valley home"
+                width="720"
+                height="480"
+              >
+              <div>
+                <strong>Corbin reviews recent Fraser Valley sales himself.</strong>
+                <p>850+ homes sold &middot; 200+ 5-star reviews &middot; Clear local guidance before you list.</p>
+              </div>
             </div>
-            <div>
-              <dt>11+</dt>
-              <dd>years in real estate</dd>
-            </div>
-          </dl>
+            <p class="hero-status" data-hero-status aria-live="polite"></p>
+          </form>
         </div>
       </section>
 
       <section class="section intro" aria-labelledby="intro-title">
         <div class="section-heading compact">
-          <p class="eyebrow">A cleaner first step</p>
-          <h2 id="intro-title">Pick the move you are actually trying to make.</h2>
+          <p class="eyebrow">Choose your path</p>
+          <h2 id="intro-title">What do you need help with right now?</h2>
         </div>
         <div class="path-grid">
-          <a class="path-card" id="sell" href="https://callcorbin.ca/selling/" target="_blank" rel="noreferrer">
+          <a class="path-card featured" id="sell" href="home-evaluation/">
             <span class="path-label">Selling</span>
-            <h3>Protect your equity before you list.</h3>
-            <p>Pricing strategy, prep that pays, pro media, MLS launch, showing feedback, and offer negotiation.</p>
+            <h3>Start your free local price range.</h3>
+            <p>Start with your address, see how Corbin reviews the home, and open the full form when you want a sharper answer.</p>
           </a>
           <a class="path-card" id="buy" href="https://callcorbin.ca/home-buying-process/" target="_blank" rel="noreferrer">
             <span class="path-label">Buying</span>
-            <h3>Find the right home without overpaying.</h3>
-            <p>Budget clarity, local shortlist, fast showings, offer strategy, subject guidance, and closing support.</p>
+            <h3>Find the right home without rushing.</h3>
+            <p>Search listings, compare neighbourhoods, and get a local read before you overpay.</p>
           </a>
           <a class="path-card" href="https://callcorbin.ca/resources/" target="_blank" rel="noreferrer">
-            <span class="path-label">Researching</span>
-            <h3>Get plain-English answers first.</h3>
-            <p>Use market tools, city guides, buyer FAQs, seller prep notes, and mortgage calculators before a call.</p>
+            <span class="path-label">Still deciding</span>
+            <h3>Learn before you commit.</h3>
+            <p>Use area guides, buyer and seller resources, and market tools if you are not ready to talk yet.</p>
           </a>
         </div>
       </section>
 
       <section class="section split-section" aria-labelledby="strategy-title">
         <div class="split-copy">
-          <p class="eyebrow">Why call before you move</p>
-          <h2 id="strategy-title">The offer is not "real estate help." It is decision protection.</h2>
+          <p class="eyebrow">Why people reach out early</p>
+          <h2 id="strategy-title">Get clear advice before you make a big move.</h2>
           <p>
-            The live site already has strong proof. This prototype brings that proof forward and turns it
-            into a clear promise: know your price, your competition, and your next move before emotion takes over.
+            Corbin &amp; Co is strongest when the move still has questions around it. Sellers get honest pricing
+            and prep guidance. Buyers get a local read on value, competition, and risk before they commit.
           </p>
           <ul class="check-list">
-            <li>Straight pricing based on real comparable sales and buyer demand.</li>
-            <li>Fast reply paths for people who need advice before a showing, offer, or listing decision.</li>
-            <li>Buyer guardrails that flag weak value, bad terms, and expensive hidden risks.</li>
-            <li>Seller preparation that focuses on upgrades, staging, and media that can actually change outcomes.</li>
+            <li>See what your home could be worth before you choose a list price.</li>
+            <li>Learn which prep work can change the outcome and which work can wait.</li>
+            <li>Spot weak value, risky terms, and costly surprises before you offer.</li>
+            <li>Get a fast local answer by text, call, or a deeper consultation.</li>
           </ul>
         </div>
         <figure class="image-panel">
@@ -132,11 +143,10 @@
 
       <section class="section service-band" aria-labelledby="services-title">
         <div class="section-heading">
-          <p class="eyebrow">Buyer and seller pathways</p>
-          <h2 id="services-title">A calmer journey for high-stakes decisions.</h2>
+          <p class="eyebrow">Start here</p>
+          <h2 id="services-title">Two simple next steps, based on your move.</h2>
           <p>
-            Each path has one obvious next action, stronger proof placement, and less competing clutter than the
-            current page flow.
+            Sellers start with a home value request. Buyers start with listings and a local conversation.
           </p>
         </div>
 
@@ -150,13 +160,13 @@
             >
             <div class="service-content">
               <span class="path-label">For sellers</span>
-              <h3>Price, prepare, launch, negotiate.</h3>
+              <h3>Start with price, then plan the move.</h3>
               <p>
-                Lead with a home value request, then show the practical work behind it:
-                consultation, pricing, prep, media, exposure, feedback, offers, and close.
+                Start with your free local price range, then get help with pricing, prep, timing,
+                offers, and what is worth doing before you list.
               </p>
-              <a class="text-link" href="https://callcorbin.ca/home-evaluation/" target="_blank" rel="noreferrer">
-                Request home value
+              <a class="text-link" href="home-evaluation/">
+                Start free local price range
               </a>
             </div>
           </article>
@@ -170,10 +180,10 @@
             >
             <div class="service-content">
               <span class="path-label">For buyers</span>
-              <h3>Shortlist smarter and move faster.</h3>
+              <h3>Browse listings, then pressure-test the fit.</h3>
               <p>
-                Move buyers from browsing into a consult: budget, neighborhood fit, pre-approval,
-                custom alerts, tours, offer terms, subject removal, and keys.
+                Start with listings, then get help with neighbourhoods, showings, offer strategy,
+                subjects, and the pace of the local market.
               </p>
               <a class="text-link" href="https://homes.callcorbin.ca/" target="_blank" rel="noreferrer">
                 Browse live listings
@@ -185,33 +195,32 @@
 
       <section class="section proof-section" id="proof" aria-labelledby="proof-title">
         <div class="proof-copy">
-          <p class="eyebrow">Trust signals from the live site</p>
-          <h2 id="proof-title">Proof belongs before the visitor has to hunt for it.</h2>
+          <p class="eyebrow">Why people trust Corbin &amp; Co</p>
+          <h2 id="proof-title">Real proof before you trust the advice.</h2>
           <p>
-            The current site has valuable credibility: 850+ homes sold, 200+ 5-star reviews,
-            Top 1% positioning, awards, Stonehaus Realty affiliation, Rate-My-Agent presence,
-            and repeated client themes around fast replies, honesty, local pricing, and negotiation.
+            People want proof before they reach out. Corbin &amp; Co has sold 850+ homes, earned 200+ 5-star reviews,
+            and helps buyers and sellers across the Fraser Valley.
           </p>
           <a class="button dark" href="https://callcorbin.ca/reviews/" target="_blank" rel="noreferrer">
-            Read live reviews
+            Read client reviews
           </a>
         </div>
         <div class="proof-grid" aria-label="Key credibility points">
           <div>
             <strong>200+ 5-star reviews</strong>
-            <span>Live proof is condensed into a scannable trust block instead of a long first-page feed.</span>
+            <span>Past clients talk about honesty, speed, pricing guidance, and support through negotiations.</span>
           </div>
           <div>
             <strong>850+ homes sold</strong>
-            <span>Used as a strategic proof point for both pricing and negotiation confidence.</span>
+            <span>Local experience across Langley, Cloverdale, Surrey, White Rock, Abbotsford, Maple Ridge, and Chilliwack.</span>
           </div>
           <div>
-            <strong>Local market depth</strong>
-            <span>Langley, Cloverdale, Clayton Heights, Surrey, White Rock, Abbotsford, Maple Ridge, and Chilliwack.</span>
+            <strong>Reviewed by Corbin</strong>
+            <span>Start with your address, then continue into the full form for a sharper answer based on recent Fraser Valley sales.</span>
           </div>
           <div>
             <strong>Fast contact</strong>
-            <span>The live contact page says text is fastest and replies usually happen within an hour or two.</span>
+            <span>Text is usually the fastest way to get a reply when you want a quick answer.</span>
           </div>
         </div>
       </section>
@@ -219,9 +228,9 @@
       <section class="section areas" id="areas" aria-labelledby="areas-title">
         <div class="section-heading">
           <p class="eyebrow">Neighbourhood intelligence</p>
-          <h2 id="areas-title">Route people by where they want to live, not only by property type.</h2>
+          <h2 id="areas-title">Explore the Fraser Valley areas you care about.</h2>
           <p>
-            City and neighbourhood pages become a secondary conversion path for early-stage buyers and sellers.
+            Still comparing where to live or where to sell? Start with the areas you care about most.
           </p>
         </div>
         <div class="area-grid">
@@ -244,23 +253,23 @@
             width="1200"
             height="800"
           >
-          <figcaption>A team process built around speed and clarity.</figcaption>
+          <figcaption>Real answers beat guesswork when the move feels big.</figcaption>
         </figure>
         <div class="split-copy">
-          <p class="eyebrow">Objection handling</p>
-          <h2 id="process-title">What visitors need to believe before they contact you.</h2>
+          <p class="eyebrow">Common questions</p>
+          <h2 id="process-title">Questions people ask before they reach out.</h2>
           <div class="faq-list">
             <details open>
-              <summary>Will I get a real strategy or just a lead-capture form?</summary>
-              <p>The prototype leads with a specific promise: pricing, timing, competition, and next steps based on local comps and buyer demand.</p>
+              <summary>Will I get a real home value or a generic estimate?</summary>
+              <p>The goal is a sharper local pricing read. The live valuation form collects the property details needed to give better advice than a loose online estimate.</p>
             </details>
             <details>
-              <summary>What if I am not ready to sell or buy yet?</summary>
-              <p>The secondary CTA sends visitors to resources, city guides, and live listings so they can stay engaged without pressure.</p>
+              <summary>What if I am months away from moving?</summary>
+              <p>You can still start with your value, browse listings, or use the area pages and resources until the timing feels right.</p>
             </details>
             <details>
-              <summary>Why not just start with listings?</summary>
-              <p>Listings are useful, but they do not answer whether a visitor should move, wait, price differently, or compete in a specific area.</p>
+              <summary>Can buyers use this page too?</summary>
+              <p>Yes. Buyers can move straight into live listings, then use Corbin &amp; Co for neighborhood fit, offer strategy, and honest read-throughs on value.</p>
             </details>
           </div>
         </div>
@@ -269,14 +278,14 @@
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-copy">
           <p class="eyebrow">Next step</p>
-          <h2 id="contact-title">Get a straight answer before you make the next move.</h2>
+          <h2 id="contact-title">Need a quick answer first?</h2>
           <p>
-            Call, text, or send the basics. The live site routes visitors into Corbin &amp; Co's real contact paths.
+            Call, text, or send a short note. If you are deciding whether to sell, buy, or wait, Corbin can help you figure out the next smart step.
           </p>
           <div class="contact-methods">
             <a href="tel:+16048252853">604-825-2853</a>
             <a href="mailto:corbin@callcorbin.ca">corbin@callcorbin.ca</a>
-            <a href="https://callcorbin.ca/contact/" target="_blank" rel="noreferrer">Live contact page</a>
+            <a href="https://callcorbin.ca/contact/" target="_blank" rel="noreferrer">Full contact page</a>
           </div>
         </div>
 
@@ -293,17 +302,17 @@
             <span>I am</span>
             <select name="goal" required>
               <option value="">Choose one</option>
-              <option>Selling soon</option>
-              <option>Buying soon</option>
+              <option>Curious what my home is worth</option>
+              <option>Planning to sell</option>
+              <option>Planning to buy</option>
               <option>Comparing neighbourhoods</option>
-              <option>Need pricing advice</option>
             </select>
           </label>
           <label>
             <span>Message</span>
             <textarea name="message" rows="4" required></textarea>
           </label>
-          <button class="button primary" type="submit">Send message</button>
+          <button class="button primary" type="submit">Email Corbin</button>
         </form>
       </section>
     </main>
@@ -312,7 +321,7 @@
       <div>
         <a class="footer-brand" href="#top">Corbin &amp; Co</a>
         <p>103-20353 64 Ave, Langley City, BC, V2Y 1N5</p>
-        <p class="legal">Prototype only. Live site and brokerage operations remain at callcorbin.ca.</p>
+        <p class="legal">Home value requests continue on callcorbin.ca.</p>
       </div>
       <nav aria-label="Footer navigation">
         <a href="https://callcorbin.ca/" target="_blank" rel="noreferrer">Live site</a>

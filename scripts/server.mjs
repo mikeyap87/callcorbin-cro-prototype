@@ -20,7 +20,12 @@ const types = {
 
 function resolvePath(url) {
   const cleanUrl = new URL(url, `http://${host}:${port}`);
-  const pathname = cleanUrl.pathname === "/" ? "/index.html" : cleanUrl.pathname;
+  let pathname = cleanUrl.pathname;
+  if (pathname === "/") {
+    pathname = "/index.html";
+  } else if (!extname(pathname)) {
+    pathname = `${pathname.replace(/\/?$/, "/")}index.html`;
+  }
   const target = normalize(join(root, pathname));
   return target.startsWith(root) ? target : join(root, "index.html");
 }

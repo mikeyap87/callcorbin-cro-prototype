@@ -8,7 +8,7 @@
     "start": "node scripts/server.mjs",
     "check": "node scripts/check.mjs",
     "browser:check": "npx playwright test scripts/browser-check.spec.cjs --reporter=line",
-    "build": "node scripts/check.mjs && rm -rf dist && mkdir -p dist && cp index.html styles.css script.js dist/ && cp -R assets dist/assets"
+    "build": "node scripts/check.mjs && rm -rf dist && mkdir -p dist/home-evaluation && cp index.html styles.css script.js dist/ && cp home-evaluation/index.html dist/home-evaluation/ && cp -R assets dist/assets"
   },
   "devDependencies": {
     "@playwright/test": "^1.59.1"
